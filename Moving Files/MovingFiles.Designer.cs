@@ -25,37 +25,37 @@ namespace Moving_Files {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\rvargas\\Desktop\\actualizador")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\patovega\\Desktop\\actualizador\\source_folder")]
+        public string source_folder {
+            get {
+                return ((string)(this["source_folder"]));
+            }
+            set {
+                this["source_folder"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\patovega\\Desktop\\actualizador\\target_folder")]
+        public string target_folder {
+            get {
+                return ((string)(this["target_folder"]));
+            }
+            set {
+                this["target_folder"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\patovega\\Desktop\\actualizador")]
         public string root_folder {
             get {
                 return ((string)(this["root_folder"]));
             }
             set {
                 this["root_folder"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\rvargas\\Desktop\\actualizador\\new_version_folder")]
-        public string new_version_folder {
-            get {
-                return ((string)(this["new_version_folder"]));
-            }
-            set {
-                this["new_version_folder"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\rvargas\\Desktop\\actualizador\\current_folder")]
-        public string official_folder {
-            get {
-                return ((string)(this["official_folder"]));
-            }
-            set {
-                this["official_folder"] = value;
             }
         }
     }

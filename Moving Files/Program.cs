@@ -21,8 +21,8 @@ namespace Moving_Files
 
             try
             {
-                var currentVersionDirectory = MovingFiles.Default.official_folder;
-                var newVersionDirectory = MovingFiles.Default.new_version_folder;
+                var currentVersionDirectory = MovingFiles.Default.target_folder;
+                var newVersionDirectory = MovingFiles.Default.source_folder;
 
 
                 var newVersionAvailable = CheckFolderForNewVersion(newVersionDirectory);
@@ -73,14 +73,14 @@ namespace Moving_Files
                 }
 
                 Console.WriteLine("creating backup files for last version");
-                Copy(MovingFiles.Default.official_folder, directory);
+                Copy(MovingFiles.Default.target_folder, directory);
                 Thread.Sleep(2000);
                 Console.WriteLine("backup ready");
                 Thread.Sleep(2000);
                 Console.WriteLine("Installing new version");
-                DeleteFilesFromFolder(MovingFiles.Default.official_folder);
+                DeleteFilesFromFolder(MovingFiles.Default.target_folder);
                 Thread.Sleep(2000);
-                Copy(MovingFiles.Default.new_version_folder, MovingFiles.Default.official_folder);
+                Copy(MovingFiles.Default.source_folder, MovingFiles.Default.target_folder);
                 Console.WriteLine("Update its complete");
                 return true;
             }

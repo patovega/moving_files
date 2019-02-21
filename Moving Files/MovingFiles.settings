@@ -2,14 +2,14 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Moving_Files" GeneratedClassName="MovingFiles">
   <Profiles />
   <Settings>
+    <Setting Name="source_folder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\patovega\Desktop\actualizador\source_folder</Value>
+    </Setting>
+    <Setting Name="target_folder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\patovega\Desktop\actualizador\target_folder</Value>
+    </Setting>
     <Setting Name="root_folder" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\rvargas\Desktop\actualizador</Value>
-    </Setting>
-    <Setting Name="new_version_folder" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\rvargas\Desktop\actualizador\new_version_folder</Value>
-    </Setting>
-    <Setting Name="official_folder" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\rvargas\Desktop\actualizador\current_folder</Value>
+      <Value Profile="(Default)">C:\Users\patovega\Desktop\actualizador</Value>
     </Setting>
   </Settings>
 </SettingsFile>
